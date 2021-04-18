@@ -1,0 +1,52 @@
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include desktop {
+    font-size: 3rem;
+  }
+}
+
+.artistas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.artistas__item {
+  position: relative;
+  width: 25%;
+  margin: 4.1%;
+}
+
+.artistas__item img {
+  width: 100%;
+}
+
+.artistas__nombre {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+
+  @include desktop {
+    font-size: 2rem;
+  }
+}
+
+.artistas__position {
+  font-size: 1rem;
+
+  @include desktop {
+    font-size: 1.5rem;
+  }
+}
+
+.artistas__descripcion {
+  font-size: 0.7rem;
+
+  @include desktop {
+    font-size: 1rem;
+  }
+}

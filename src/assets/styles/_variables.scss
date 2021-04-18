@@ -1,8 +1,33 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+$colors: (
+  main: #ffff,
+  accent: #fe320f,
+  text: #B666D2,
+  hovertext: #E0B0FF,
+  fondo: #f3f3f3,
+  dark: #000000
+);
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+//Fuentes
+$header-font: 'Galatia SIL', georgia, serif;
+$body-font: 'Avenir Book', 'Franklin Gothic Medium', helvetica, arial, sans-serif;
+
+//Cambio de la variable de boostrap
+$primary: #B666D2;
+
+//Tamaños
+$font-size-14: 14pt;
+$desktop: 840px;
+
+//Funcion colores
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+//Mixin
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
