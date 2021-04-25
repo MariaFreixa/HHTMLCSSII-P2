@@ -2,7 +2,6 @@
 
 $colors: (
   main: #ffff,
-  accent: #fe320f,
   text: #B666D2,
   hovertext: #E0B0FF,
   fondo: #f3f3f3,
@@ -13,21 +12,31 @@ $colors: (
 $header-font: 'Galatia SIL', georgia, serif;
 $body-font: 'Avenir Book', 'Franklin Gothic Medium', helvetica, arial, sans-serif;
 
-//Cambio de la variable de boostrap
+//Cambio variables de boostrap
 $primary: #B666D2;
 
 //Tamaños
 $font-size-14: 14pt;
+$font-size-70: 70pt;
 $desktop: 840px;
+$tablet: 640px;
 
 //Funcion colores
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
 
-//Mixin
+//Mixins
 @mixin desktop {
   @media (min-width: #{$desktop}) {
     @content;
   }
 }
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+
