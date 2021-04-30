@@ -5,7 +5,7 @@
 .poster__title {
   margin: 0.25em;
   font-family: $header-font;
-  font-size: $font-size-50;
+  font-size: $font-size-45;
   color: color(text);
   text-align: center;
 }
@@ -61,7 +61,6 @@
       grid-column: 5 / 6;
       grid-row: 2;
       align-self: end;
-      padding-bottom: 4vh;
       margin-bottom: initial;
     }
 
