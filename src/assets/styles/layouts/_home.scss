@@ -5,7 +5,7 @@
 .poster__title {
   margin: 0.25em;
   font-family: $header-font;
-  font-size: $font-size-70;
+  font-size: $font-size-50;
   color: color(text);
   text-align: center;
 }
@@ -31,9 +31,12 @@
 .poster__location {
   padding: 10px;
   margin: 5px;
+  margin-bottom: 20px;
   font-weight: bold;
   line-height: 1.5;
+  text-align: center;
   text-transform: uppercase;
+  background: color(text);
 }
 
 // Grid layout for wide display
@@ -73,9 +76,6 @@
       display: flex;
       grid-column: 2 / 3;
       grid-row: 4 / 6;
-      margin-bottom: 20px;
-      text-align: center;
-      background: color(text);
 
       p {
         margin: auto;
